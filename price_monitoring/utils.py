@@ -1,12 +1,14 @@
 import pymongo
 import datetime
 import json
+import logging
 import os.path
 from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
 from scrapy.utils.project import get_project_settings
 
 settings = get_project_settings()
+logger = logging.getLogger(__name__)
 
 
 def calculate_price_differences(db):
@@ -143,4 +145,4 @@ def update_google_sheet(db):
         .execute()
     )
 
-    print(f"{result.get('updatedCells')} celdas actualizadas en Google Sheets.")
+    logger.info(f"{result.get('updatedCells')} celdas actualizadas en Google Sheets.")
