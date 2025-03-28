@@ -1,0 +1,9 @@
+pip-tools
+Scrapy==2.10.0
+Twisted==22.10.0
+pymongo[srv]
+dnspython
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+google-api-python-client
