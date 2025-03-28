@@ -130,6 +130,8 @@ pyproject-hooks==1.2.0
     # via
     #   build
     #   pip-tools
+python-dotenv==1.1.0
+    # via -r requirements.in
 queuelib==1.7.0
     # via scrapy
 requests==2.32.3

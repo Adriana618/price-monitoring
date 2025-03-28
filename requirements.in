@@ -2,6 +2,7 @@ pip-tools
 Scrapy==2.10.0
 Twisted==22.10.0
 pymongo[srv]
+python-dotenv
 dnspython
 google-auth
 google-auth-oauthlib

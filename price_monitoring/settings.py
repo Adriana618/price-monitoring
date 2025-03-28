@@ -8,6 +8,9 @@
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 BOT_NAME = "price_monitoring"
 
